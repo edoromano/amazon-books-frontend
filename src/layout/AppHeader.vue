@@ -16,13 +16,13 @@
 </template>
 <script>
 
-import BaseNav from "@/components/BaseNav";
 import Menu1 from "../views/components/Navigation/Menu1";
+import BaseNav from "@/components/BaseNav";
 
 export default {
   components: {
     Menu1,
-    BaseNav,
+    BaseNav
   },
   data() {
     return {
