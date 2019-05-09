@@ -4,7 +4,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <div class="mb-1">
-                        <medium class="text-uppercase font-weight-bold">Books By Genre</medium>
+                        <small class="text-uppercase font-weight-bold">Books By Genre</small>
                     </div>
                     <a href="#" v-bind:class="'btn btn-link text-' + randomType()" v-for="book in books" v-bind:key="book.id">
                         {{book.title}}
