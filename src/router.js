@@ -4,6 +4,7 @@ import AppHeader from "./layout/AppHeader";
 import AppFooter from "./layout/AppFooter";
 import Profile from "./views/Profile.vue";
 import Components from "./views/Components.vue";
+import Book from "./views/Book.vue";
 
 Vue.use(Router);
 
@@ -25,6 +26,15 @@ export default new Router({
       components: {
         header: AppHeader,
         default: Profile,
+        footer: AppFooter
+      }
+    },
+    {
+      path: "/book",
+      name: "books",
+      components: {
+        header: AppHeader,
+        default: Book,
         footer: AppFooter
       }
     }

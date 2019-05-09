@@ -38,6 +38,11 @@ export default {
       var types = ['primary', 'info', 'success', 'warning', 'danger']
       var random = Math.floor(Math.random() * 5) + 1;
       return types[random];
+    },
+    watch: {
+      isbn: function (value) {
+        console.log(value)
+      }
     }
   }
 }

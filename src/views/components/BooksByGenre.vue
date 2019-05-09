@@ -6,7 +6,7 @@
           <div class="mb-1">
             <small class="text-uppercase font-weight-bold">Books By Genre</small>
           </div>
-          <a href="#" v-bind:class="'btn btn-link text-' + randomType()" v-for="book in books" v-bind:key="book.id">
+          <a v-bind:href="'/#/book?id='+book.id" v-bind:class="'btn btn-link text-' + randomType()" v-for="book in books" v-bind:key="book.id">
             {{book.title}}
           </a>
         </div>
